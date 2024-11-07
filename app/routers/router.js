@@ -2,12 +2,12 @@
 let express = require('express');
 let router = express.Router();
  
-const song = require('../controllers/controller.js');
+const juego = require('../controllers/juego.controller.js');
 
-router.post('/api/song/create', song.create);
-router.get('/api/song/all', song.retrieveAllSong);
-router.get('/api/song/onebyid/:id', song.getSongById);
-router.put('/api/song/update/:id', song.updateById);
-router.delete('/api/song/delete/:id', song.deleteById);
+router.post('/api/juego/create', juego.create);
+router.get('/api/juego/all', juego.retrieveAll);
+router.get('/api/juego/onebyid/:id', juego.getById);
+router.put('/api/juego/update/:id', juego.updateById);
+router.delete('/api/juego/delete/:id', juego.deleteById);
 
 module.exports = router;
