@@ -16,7 +16,7 @@ module.exports = (sequelize, Sequelize) => {
 			type: Sequelize.STRING
 	  },
 	  fecha_lazamiento: {
-			type: Sequelize.DATEONLY
+			type: Sequelize.DATE
     },
 	  precio_alquiler: {
 			type: Sequelize.DOUBLE
